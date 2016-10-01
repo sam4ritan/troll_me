@@ -1,0 +1,19 @@
+body {
+  padding: 30px;
+  font: 18px "Century Gothic";
+  color:#FFFFFF;
+  background-image: url(/static/css/bg.jpg);
+}
+
+footer {
+  position: absolute;
+  background-color: #424242;
+  width: 100%;
+}
+
+#headline {
+  text-align: center;
+  color:#FFFFFF;
+  font: bold 60px "Arial";
+  text-shadow: 10px 11px 12px #000000;
+}
