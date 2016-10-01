@@ -9,6 +9,12 @@ footer {
   position: absolute;
   background-color: #424242;
   width: 100%;
+  padding: 20px;
+}
+
+p{
+  padding: 0px;
+  margin: 0px;
 }
 
 #headline {
