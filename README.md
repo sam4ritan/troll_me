@@ -1,2 +1,2 @@
-# backend_db
-The database backend component for troll_me (includes data about images etc.)
+# troll_me
+a meme and trolling database
