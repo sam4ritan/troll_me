@@ -2,13 +2,19 @@ body {
   padding: 30px;
   font: 18px "Century Gothic";
   color:#FFFFFF;
+  background-image: url(/static/css/bg.jpg);
+}
+
+footer {
+  position: absolute;
   background-color: #424242;
+  width: 100%;
 }
 
 #headline {
   text-align: center;
   color:#FFFFFF;
-  font: 36px "Century Gothic";
+  font: bold 60px "Arial";
   text-shadow: 10px 11px 12px #000000;
 }
 
@@ -21,7 +27,6 @@ body {
 .linkanzeige{
   color:#FFFFFF;
   font: "Century Gothic";
-  text-shadow: 5px 5px 5px #000000;
   text-align: center;
   width:50%;
 
@@ -42,11 +47,13 @@ background:#2E2E2E;
 -moz-border-radius:10px;
 border-radius:10px;
 /* Innenabstand */
-padding:20px;
+padding:90px;
 /* Breite */
 width:50%;
 /* AuÃŸenabstand */
 margin:20px auto;
+opacity: 0.75;
+box-shadow: 15px 15px 5px #000000;
 }
 
 
@@ -80,10 +87,10 @@ transition: all 0.4s ease-out;
 }
 
 #galerie .row div:nth-child(3n) img{
--webkit-transform: rotate(30deg);  /* Saf3.1+, Chrome */
--moz-transform: rotate(30deg);  /* FF3.5+ */
--o-transform: rotate(30deg);  /* Opera */
-transform: rotate(30deg);
+-webkit-transform: rotate(25deg);  /* Saf3.1+, Chrome */
+-moz-transform: rotate(25deg);  /* FF3.5+ */
+-o-transform: rotate(25deg);  /* Opera */
+transform: rotate(25deg);
 }
 
 /*Jedes zweite Bild wird rechtsrum gedreht...*/
