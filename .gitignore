@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/python,linux,windows
+# Created by https://www.gitignore.io/api/python,windows,linux
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -108,7 +108,6 @@ ENV/
 
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
-
 
 ### Windows ###
 # Windows image file caches
