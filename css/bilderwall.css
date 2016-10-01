@@ -1,26 +1,31 @@
-body {
+#wrapper {
   padding: 30px;
-  font: 18px "Century Gothic";
-  color:#FFFFFF;
+  font: "Century Gothic";
+  height:100%;
+  width:100%;
   background-color: #424242;
 }
 
 #headline {
   text-align: center;
   color:#FFFFFF;
-  font: 70px "Century Gothic";
+  font: 36px "Century Gothic";
   text-shadow: 10px 11px 12px #000000;
 }
 
-.beschreibung{
-
-  display:inline-block;
+.memes{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
 .linkanzeige{
+  color:#FFFFFF;
+  font: "Century Gothic";
+  text-shadow: 5px 5px 5px #000000;
   text-align: center;
   width:50%;
+
   margin-left: auto;
   margin-right: auto;
 }
@@ -34,21 +39,30 @@ body {
 #galerie {
 /* Hintergrundfarbe */
 background:#2E2E2E;
-
 /* Runde Ecken */
 -moz-border-radius:10px;
 border-radius:10px;
-
-padding: 20px;
-margin: 20px;
+/* Innenabstand */
+padding:20px;
+/* Breite */
+width:50%;
+/* AuÃŸenabstand */
+margin:20px auto;
 }
 
 
 
 
 #galerie img {
+/* Hintergrundfarbe der Bilder */
+background:#ffffff;
+/* Breite der Bilder */
+width:150px;
+/* AuÃŸenabstand */
+margin-left: auto;
+margin-right: auto;
 
-margin-bottom: 20px;
+padding:10px 10px 10px 10px;
 
 /*Schlagschatten*/
 -moz-box-shadow: 0 0 5px 2px #ccc;
