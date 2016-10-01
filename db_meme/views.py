@@ -5,6 +5,7 @@ from django import forms
 
 from django.template import loader
 from .models import Meme_pic
+from .linker import link_creator
 # Create your views here.
 
 def index(request):
@@ -18,19 +19,25 @@ def index(request):
 
 @csrf_protect
 def item(request):
+    val1 = ''
+
     if request.method == 'POST':
         val1 = request.POST.get('to_convert','')
-        print(val1)
-        return render(request, 'db_meme/item.html', context)
-
+        bildid = request.POST.get('bildid','')
     else:
-        paramVal = request.GET.get('id','')
+        bildid = request.GET.get('id','')
 
-        if str(paramVal) == '':
-            return HttpResponseRedirect("/")
+    if str(bildid) == '':
+        return HttpResponseRedirect("/")
 
-        itemElement = Meme_pic.objects.get(pk=paramVal)
-        context = {
-            "item" : itemElement
-        }
-        return render(request, 'db_meme/item.html', context)
+    itemElement = Meme_pic.objects.get(pk=bildid)
+
+    convertText = ''
+    if len(str(val1)) > 0:
+        convertText = link_creator(val1, itemElement.murl)
+
+    context = {
+        "item" : itemElement,
+        'copytext' : convertText
+    }
+    return render(request, 'db_meme/item.html', context)
