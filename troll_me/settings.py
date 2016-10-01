@@ -70,6 +70,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'troll_me.wsgi.application'
 
+STATIC_URL= '/static/'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
