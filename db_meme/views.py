@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_protect
 from django.http import HttpResponse, HttpResponseRedirect
+from django import forms
 
 from django.template import loader
 from .models import Meme_pic
@@ -14,12 +16,12 @@ def index(request):
     }
     return render(request, 'db_meme/index.html', context)
 
+@csrf_protect
 def item(request):
-
     if request.method == 'POST':
-        val1 = request.POST.CharField(label="usr")
+        val1 = request.POST.get('to_convert','')
         print(val1)
-        return HttpResponse('Hello World')
+        return render(request, 'db_meme/item.html', context)
 
     else:
         paramVal = request.GET.get('id','')
