@@ -10,7 +10,6 @@ from .linker import link_creator
 
 def index(request):
     list = Meme_pic.objects.all()[:9]
-    print(len(list))
     template = loader.get_template('db_meme/index.html')
     context = {
         "items" : list
@@ -37,7 +36,7 @@ def item(request):
         convertText = link_creator(val1, itemElement.murl)
 
     context = {
-        "item" : itemElement,
+        'item' : itemElement,
         'copytext' : convertText
     }
     return render(request, 'db_meme/item.html', context)
