@@ -1,8 +1,6 @@
-#wrapper {
+body {
   padding: 30px;
   font: "Century Gothic";
-  height:100%;
-  width:100%;
   background-color: #424242;
 }
 
@@ -13,10 +11,14 @@
   text-shadow: 10px 11px 12px #000000;
 }
 
+.beschreibung{
+  color:#FFFFFF;
+  font:"Century Gothic";
+  display:inline-block;
+}
+
 .memes{
-  display:block;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 
 .linkanzeige{
@@ -39,30 +41,20 @@
 #galerie {
 /* Hintergrundfarbe */
 background:#2E2E2E;
+
 /* Runde Ecken */
 -moz-border-radius:10px;
 border-radius:10px;
-/* Innenabstand */
-padding:20px;
-/* Breite */
-width:50%;
-/* AuÃŸenabstand */
-margin:20px auto;
+
+padding: 20px;
 }
 
 
 
 
 #galerie img {
-/* Hintergrundfarbe der Bilder */
-background:#ffffff;
-/* Breite der Bilder */
-width:150px;
-/* AuÃŸenabstand */
-margin-left: auto;
-margin-right: auto;
 
-padding:10px 10px 10px 10px;
+margin-bottom: 20px;
 
 /*Schlagschatten*/
 -moz-box-shadow: 0 0 5px 2px #ccc;
