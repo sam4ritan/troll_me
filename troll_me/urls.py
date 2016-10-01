@@ -20,5 +20,5 @@ from db_meme.views import index, item
 urlpatterns = [
     ##url(r'^admin/', admin.site.urls),
     url(r'^$', index, name='index' )
-    url(r'^item.html', item)
+    url(r'^item\.html$', item)
 ]
