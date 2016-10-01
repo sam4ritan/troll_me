@@ -6,7 +6,7 @@ from .models import Meme_pic
 # Create your views here.
 
 def index(request):
-    list = Meme_pic.objects.all()[:1]
+    list = Meme_pic.objects.all()[:9]
     template = loader.get_template('db_meme/index.html')
     context = {
         "items" : list
@@ -14,14 +14,17 @@ def index(request):
     return render(request, 'db_meme/item.html', context)
 
 def item(request):
+
     if request.method == 'POST':
         val1 = request.POST.CharField(label="usr")
-
+        print(val1)
+        return HttpResponse('Hello World')
 
     else:
         paramVal = request.GET.get('id','')
 
         if str(paramVal):
+            print('Hi')
             return HttpResponseRedirect("/")
 
         itemElement = Meme_pic.objects.get(paramVal)
