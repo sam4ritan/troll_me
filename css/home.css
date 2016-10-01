@@ -1,6 +1,7 @@
 body {
   padding: 30px;
-  font: "Century Gothic";
+  font: 18px "Century Gothic";
+  color:#FFFFFF;
   background-color: #424242;
 }
 
@@ -12,22 +13,14 @@ body {
 }
 
 .beschreibung{
-  color:#FFFFFF;
-  font:"Century Gothic";
+
   display:inline-block;
 }
 
-.memes{
-
-}
 
 .linkanzeige{
-  color:#FFFFFF;
-  font: "Century Gothic";
-  text-shadow: 5px 5px 5px #000000;
   text-align: center;
   width:50%;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,6 +40,7 @@ background:#2E2E2E;
 border-radius:10px;
 
 padding: 20px;
+margin: 20px;
 }
 
 
