@@ -7,7 +7,6 @@
 }
 
 #headline {
-  margin: 50px;
   text-align: center;
   color:#FFFFFF;
   font: 36px "Century Gothic";
@@ -19,4 +18,58 @@
   display:block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#galerie {
+/* Hintergrundfarbe */
+background:#ffffff;
+/* Runde Ecken */
+-moz-border-radius:10px;
+border-radius:10px;
+/* Innenabstand */
+padding:20px;
+/* Breite */
+width:700px;
+/* Außenabstand */
+margin:20px auto;
+}
+
+
+
+
+#galerie img {
+/* Hintergrundfarbe der Bilder */
+background:#ffffff;
+/* Breite der Bilder */
+width:150px;
+/* Außenabstand */
+margin:15px 10px;
+
+padding:10px 10px 50px 10px;
+opacity:0.8;
+/*Schlagschatten*/
+-moz-box-shadow: 0 0 5px 2px #ccc;
+-webkit-box-shadow: 0 0 5px 2px #ccc;
+box-shadow: 0 0 5px 2px #ccc;
+/*Bilder gedreht(Linksdrehung)anzeigen*/
+-webkit-transform: rotate(-2deg);  /* Saf3.1+, Chrome */
+-moz-transform: rotate(-2deg);  /* FF3.5+ */
+-o-transform: rotate(-2deg);  /* Opera */
+transform: rotate(-2deg);
+/*damit Effekte animiert und nicht abgehackt sind*/
+-webkit-transition: all 0.4s ease-out;  /* Saf3.1+, Chrome */
+-moz-transition: all 0.4s ease-out;     /* FF3.5+ */
+-o-transition: all 0.4s ease-out;  /* Opera */
+transition: all 0.4s ease-out;
+}
+
+
+
+
+/*Jedes zweite Bild wird rechtsrum gedreht...*/
+#galerie img:nth-child(2n) {
+-webkit-transform: rotate(2deg);  /* Saf3.1+, Chrome */
+-moz-transform: rotate(2deg);  /* FF3.5+ */
+-o-transform: rotate(2deg);  /* Opera */
+transform: rotate(2deg);
 }
