@@ -7,11 +7,12 @@ from .models import Meme_pic
 
 def index(request):
     list = Meme_pic.objects.all()[:9]
+    print(len(list))
     template = loader.get_template('db_meme/index.html')
     context = {
         "items" : list
     }
-    return render(request, 'db_meme/item.html', context)
+    return render(request, 'db_meme/index.html', context)
 
 def item(request):
 
@@ -24,7 +25,6 @@ def item(request):
         paramVal = request.GET.get('id','')
 
         if str(paramVal) == '':
-            print('Hi')
             return HttpResponseRedirect("/")
 
         itemElement = Meme_pic.objects.get(pk=paramVal)
