@@ -26,7 +26,6 @@
         <div class="row">
           <div class="col-md-4">
             <select class="form-control selcls">
-              <option>4chan</option>
               <option>reddit</option>
             </select>
           </div>
@@ -35,10 +34,12 @@
 
             {% csrf_token %}
 
+            <input type="hidden" name="bildid" value="{{ item.mid }}">
+
             <div class="col-md-4">
                 <div class="form-group">
                   <label for="usr">Pseudotext:</label>
-                  <input type="text" class="form-control" id="usr" name="to_convert">
+                  <input type="text" class="form-control" id="usr" name="to_convert" value="{{ copytext }}">
                 </div>
             </div>
 
