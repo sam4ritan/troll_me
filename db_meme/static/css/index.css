@@ -68,10 +68,10 @@ padding:10px 10px 10px 10px;
 -webkit-box-shadow: 0 0 5px 2px #ccc;
 box-shadow: 0 0 5px 2px #ccc;
 /*Bilder gedreht(Linksdrehung)anzeigen*/
--webkit-transform: rotate(-2deg);  /* Saf3.1+, Chrome */
--moz-transform: rotate(-2deg);  /* FF3.5+ */
--o-transform: rotate(-2deg);  /* Opera */
-transform: rotate(-2deg);
+-webkit-transform: rotate(-10deg);  /* Saf3.1+, Chrome */
+-moz-transform: rotate(-10deg);  /* FF3.5+ */
+-o-transform: rotate(-10deg);  /* Opera */
+transform: rotate(-10deg);
 /*damit Effekte animiert und nicht abgehackt sind*/
 -webkit-transition: all 0.4s ease-out;  /* Saf3.1+, Chrome */
 -moz-transition: all 0.4s ease-out;     /* FF3.5+ */
@@ -79,13 +79,17 @@ transform: rotate(-2deg);
 transition: all 0.4s ease-out;
 }
 
-
-
+#galerie .row div:nth-child(3n) img{
+-webkit-transform: rotate(30deg);  /* Saf3.1+, Chrome */
+-moz-transform: rotate(30deg);  /* FF3.5+ */
+-o-transform: rotate(30deg);  /* Opera */
+transform: rotate(30deg);
+}
 
 /*Jedes zweite Bild wird rechtsrum gedreht...*/
-#galerie img:nth-child(2n) {
--webkit-transform: rotate(2deg);  /* Saf3.1+, Chrome */
--moz-transform: rotate(2deg);  /* FF3.5+ */
--o-transform: rotate(2deg);  /* Opera */
-transform: rotate(2deg);
+#galerie .row div:nth-child(2n) img{
+-webkit-transform: rotate(15deg);  /* Saf3.1+, Chrome */
+-moz-transform: rotate(15deg);  /* FF3.5+ */
+-o-transform: rotate(15deg);  /* Opera */
+transform: rotate(15deg);
 }
