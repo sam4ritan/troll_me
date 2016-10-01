@@ -6,6 +6,7 @@ class Meme_pic(models.Model):
 	up_date = models.DateTimeField('date uploaded')
 	format = models.CharField(max_length=4)
 	mid = models.AutoField(primary_key=True)
+	murl = models.CharField(max_length=500)
 
 	def __str__(self):
-		return str(self.description) + str(" ") + str(self.up_date) + str(" ") + str(self.format) + str(" ") + str(self.mid)
+		return str(self.description) + str(" ") + str(self.up_date) + str(" ") + str(self.format) + str(" ") + str(self.mid) + str(" ") + stt(self.murl)
