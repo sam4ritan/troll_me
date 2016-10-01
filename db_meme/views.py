@@ -23,11 +23,11 @@ def item(request):
     else:
         paramVal = request.GET.get('id','')
 
-        if str(paramVal):
+        if str(paramVal) == '':
             print('Hi')
             return HttpResponseRedirect("/")
 
-        itemElement = Meme_pic.objects.get(paramVal)
+        itemElement = Meme_pic.objects.get(pk=paramVal)
         context = {
             "item" : itemElement
         }
