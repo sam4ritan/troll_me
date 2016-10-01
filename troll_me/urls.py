@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from db_meme.views import index
+from db_meme.views import index, item
 
 urlpatterns = [
     ##url(r'^admin/', admin.site.urls),
     url(r'^$', index, name='index' )
+    url(r'^item.html', item)
 ]
