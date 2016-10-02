@@ -16,9 +16,9 @@ def index(request):
     return render(request, 'db_meme/index.html', context)
 
 def impressum(request):
-    template = loader.get_template('db_meme/impressum.html')
+    #template = loader.get_template('db_meme/impressum.html')
     context = {}
-    return render(request, 'db_meme/ipressum.html', context)
+    return render(request, 'db_meme/impressum.html', context)
 
 @csrf_protect
 def item(request):
