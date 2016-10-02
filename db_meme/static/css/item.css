@@ -5,7 +5,7 @@ body {
   background-color: #424242;
 }
 
-#headline {
+h1 {
   text-align: center;
   color:#FFFFFF;
   font: 70px "Century Gothic";
@@ -16,6 +16,13 @@ body {
 
   display:inline-block;
 }
+
+a:hover {
+  text-decoration: none;
+
+}
+
+
 
 
 .linkanzeige{
