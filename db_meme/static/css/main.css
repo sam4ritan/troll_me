@@ -1,12 +1,11 @@
 body {
-  padding: 30px;
+  padding: 10px;
   font: 18px "Century Gothic";
   color:#FFFFFF;
   background-image: url(/static/css/bg.jpg);
 }
 
 footer {
-  position: absolute;
   background-color: #424242;
   width: 100%;
 }
