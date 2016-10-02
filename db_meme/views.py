@@ -9,7 +9,7 @@ from .linker import link_creator
 # Create your views here.
 
 def index(request):
-    list = Meme_pic.objects.all()[:9]
+    list = Meme_pic.objects.all()
     template = loader.get_template('db_meme/index.html')
     context = {
         "items" : list
