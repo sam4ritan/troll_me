@@ -13,17 +13,17 @@ h1 {
 }
 
 .beschreibung{
-
   display:inline-block;
 }
 
-a:hover {
+.link:hover{
   text-decoration: none;
-
 }
 
-
-
+.pulsieren:hover{
+  -webkit-animation-name:pulse;
+  animation-name:pulse;
+}
 
 .linkanzeige{
   text-align: center;
@@ -82,4 +82,17 @@ transition: all 0.4s ease-out;
 -moz-transform: rotate(2deg);  /* FF3.5+ */
 -o-transform: rotate(2deg);  /* Opera */
 transform: rotate(2deg);
+}
+
+footer {
+  background-color: #424242;
+  width: 100%;
+  padding: 20px;
+  opacity: 0.75;
+  box-shadow: 15px 15px 5px #000000;
+  -moz-border-radius:10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top: 25px;
+  font-size: 10px;
 }
