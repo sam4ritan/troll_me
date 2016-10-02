@@ -36,6 +36,11 @@ header{
   color: #FFFFFF;
 }
 
+.pulsieren:hover{
+  -webkit-animation-name:pulse;
+  animation-name:pulse;
+}
+
 #headline {
   text-align: center;
   color:#FFFFFF;

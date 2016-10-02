@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="/static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/index.css">
     <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/animate.min.css">
   <title>Troll Me</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
           {% for i in items %}
             <div class="col-md-4">
               <a href="/item.html?id={{ i.mid }}">
-                <img class="memes img-responsive img-thumbnail" src="{{ i.murl }}" alt="Meme image">
+                <img class="memes img-responsive img-thumbnail animated pulsierend" src="{{ i.murl }}" alt="Meme image">
               </a>
             </div>
           {% endfor %}
@@ -27,5 +28,7 @@
         <a class="iLink" href="/impressum.html">Impressum</a>
       </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
   </body>
 </html>
