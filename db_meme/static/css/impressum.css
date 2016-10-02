@@ -1,0 +1,13 @@
+#impressum {
+/* Hintergrundfarbe */
+background:#2E2E2E;
+/* Runde Ecken */
+-moz-border-radius:10px;
+border-radius:10px;
+/* Innenabstand */
+padding:20px;
+/* Breite */
+width:50%;
+/* AuÃŸenabstand */
+margin:20px auto;
+}
