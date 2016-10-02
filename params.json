@@ -1,6 +1,6 @@
 {
   "name": "Troll Me",
   "tagline": "A Website with a DB of common memes and troll tropes",
-  "body": "##Hier ist ein Link im entschprechenden Markup:\r\n\" [#MakeDonaldDrumpfAgain] (127.0.0.1:8000/static/meme_sources/trump.jpeg) \"\r\n\r\n[#MakeDonaldDrumpfAgain] (http://127.0.0.1:8000/static/meme_sources/trump.jpeg)",
+  "body": "##Hier ist ein Link im entschprechenden Markup:\r\n\r\n[#MakeDonaldDrumpfAgain] (http://127.0.0.1:8000/static/meme_sources/trump.jpeg)",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
